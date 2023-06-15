@@ -1,0 +1,110 @@
+<object>
+
+        <light>
+                <position> -0.4 0.7 0.1 </position>
+                <ambient> 0.2 0.2 0.2 </ambient>
+                <diffuse> 0.4 0.4 0.4 </diffuse>
+                <specular> 0.25 0.25 0.25 </specular>
+        </light>
+
+        <light>
+                <position> 0.4 0.7 -0.1 </position>
+                <ambient> 0.1 0.1 0.1 </ambient>
+                <diffuse> 0.4 0.4 0.4 </diffuse>
+                <specular> 0.25 0.25 0.25 </specular>
+        </light>
+
+	<image name="earth" path="earthmap.jpg"></image>
+	<image name="checkerboard" path="checkerboard.jpg"></image>
+        <sphere>
+		<transform>
+			<scale> 0.2 0.2 0.2 </scale>
+			<translate> -0.5 0.2 -0.5 </translate>
+		</transform>
+		<material>
+			<ambient> 0.333 0.28 0 </ambient>
+			<diffuse> 1 0.84 0 </diffuse>
+			<specular> 0.666 0.56 0 </specular>
+			<shininess> 100 </shininess>
+
+		</material>
+	</sphere>
+
+	<sphere>
+		<transform>
+			<scale> 0.2 0.2 0.2 </scale>
+			<translate> 0.5 0.2 -0.5 </translate>
+		</transform>
+		<material>
+			<ambient> 0 0 0 </ambient>
+			<diffuse> 1 1 1 </diffuse>
+			<specular> 1 1 1 </specular>
+			<shininess> 500 </shininess>
+			<absorption> 0.7 </absorption>
+			<reflection> 0.3 </reflection>
+		</material>
+	</sphere>
+
+	<sphere>
+		<transform>
+			<scale> 0.2 0.2 0.2 </scale>
+			<translate> -0.5 0.25 0.5 </translate>
+		</transform>
+		<material>
+			<ambient> 0.5 0.1 0.1 </ambient>
+			<diffuse> 0.5 0.1 0.1 </diffuse>
+			<specular> 0.8 0.8 0.8 </specular>
+			<shininess> 500 </shininess>
+		</material>
+	</sphere>
+
+	<sphere>
+		<transform>
+			<scale> 0.25 0.25 0.25 </scale>
+			<translate> 0.5 0.3 0.5 </translate>
+		</transform>
+		<material>
+			<ambient> 1 1 1 </ambient>
+			<diffuse> 1 1 1 </diffuse>
+			<specular> 1 1 1 </specular>
+			<shininess> 500 </shininess>
+			<texture name="earth"></texture>
+		</material>
+	</sphere>
+
+	<sphere>
+		<transform>
+			<scale> 0.2 0.2 0.2 </scale>
+			<translate> 0 0.4 0 </translate>
+		</transform>
+		<material>
+			<ambient> 0.05 0.05 0.2 </ambient>
+			<diffuse> 0.1 0.1 0.5 </diffuse>
+			<specular> 0.8 0.8 0.8 </specular>
+			<shininess> 500 </shininess>
+			<absorption> 0.0 </absorption>
+			<reflection> 0.0 </reflection>
+			<transparency> 0.99 </transparency>
+			<refractive> 0.8 </refractive>
+		</material>
+        </sphere>
+	
+	<plane>
+		<material>
+			<ambient> 0.5 0.5 0.5 </ambient>
+			<diffuse> 1 1 1 </diffuse>
+			<specular> 1 1 1 </specular>
+			<shininess> 1 </shininess>
+                        <absorption> 1.0 </absorption>
+                        <reflection> 0.0 </reflection>
+                        <transparency> 0.0 </transparency>
+                        <texture name="checkerboard"></texture>
+		</material>
+	</plane>
+	
+
+<!--
+	<camera>
+		<position> -1.016 1.1 -0.4209 </position>
+	</camera> -->
+</object>
